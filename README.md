@@ -12,9 +12,9 @@ This software is a kind of "Do It Yourself" project I created to display additio
 * pico-lcd-2 and Raspberry Pi Pico
 * 320x170 LCD module with ST7789 LCD controller and Raspberry Pi Pico
 
-And supported OSs are,
+Supported Operating Systems:
 
-* Rocky, Alma, MIRACLE of version 8 or 9
+* Rocky Linux, Alma Linux, MIRACLE LINUX (version 8 or 9)
 * Debian 11, Ununtu 24 etc.
 * Windows 10 or lator
 
