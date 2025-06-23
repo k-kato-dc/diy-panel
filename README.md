@@ -45,3 +45,10 @@ Extract the release module and run the install script.
 - `diy-panel/custom`: Script for changing color, rotation, etc.
 - `diy-panel/pstat/`: Script for process status monitoring
 - `diy-panel/dstat/`: Script for performance monitoring
+
+## Known Problems
+
+- The process is not lightweight on Windows. Unlike on Linux, the command-line shell and OS commands for process and performance monitoring are inefficient. Replacing the C module might be a solution, but I have not done so because it is not a critical issue and the batch scripts can be easily modified on the target PCs.
+- Occasionally, the duplicate running check fails. This is just a sample; if the panel module does not start, please delete the `.pid` file in the panel folder.
+- The `dstat` and `pstat` scripts must be modified according to your environment. For example, you may need to change the names of network interfaces (NICs), disks, etc.
+- `diy-led` does not work on Linux. This may be due to the kernel serial driver specifications, but I have not been able to identify the cause.
