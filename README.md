@@ -1,39 +1,47 @@
 # diy-panel
-for additional status LCD-320x170
+For additional status LCD-320x170.
 
-<strong>
-[AYOR notice] This software was developed for my personal use and is provided “as is,” without warranty of any kind. Use it at your own risk.
-</strong>
+**Disclaimer:** This software was developed for my personal use and is provided “as is,” without warranty of any kind. Use it at your own risk.
 
-## Requirements ##
-This software is a kind of "Do It Yourself" project I created to display additional status information on my PC. Currently, the following types of displays are supported:
+**Intended Audience:** Users with experience in C programming and basic hardware assembly. Not a finished consumer product.
 
-* DIY-LCD of Acemagic S1
-* pico-lcd-2 and Raspberry Pi Pico
-* 320x170 LCD module with ST7789 LCD controller and Raspberry Pi Pico
+## Requirements
 
-Supported Operating Systems:
+This software is a "Do It Yourself" project I created to display additional status information on my PC. Currently, the following types of displays are supported:
 
-* Rocky Linux, Alma Linux, MIRACLE LINUX (version 8 or 9)
-* Debian 11, Ununtu 24 etc.
-* Windows 10 or lator
+- DIY-LCD of Acemagic S1
+- pico-lcd-2 and Raspberry Pi Pico
+- 320x170 LCD module with ST7789 LCD controller and Raspberry Pi Pico
 
-## Files ##
-  the source codes are,
+![Fig1](/optional/fig1.png)
 
-* diy-panel: bitmap display sample
-* optional/bitmap_src: bitmap data for diy-panel
-* optional/diy-lcd: led control sample
-* optional/diy-pico: Raspberry Pi Pico module to connect diy-panel
+**Supported Operating Systems:**
 
-And the status information collector scripts are in the release package.
+- Rocky Linux, Alma Linux, MIRACLE LINUX (version 8 or 9)
+- Debian 11, Ubuntu 24, etc.
+- Windows 10 or later
 
-* diy-pstat: script for check process status
-* diy-dstat: script for check performance value
+## Files
 
-## Installation ##
-* extract release module and run the install script
-* modules are placed /opt/AYOR/ or C:\Program Files(x86)\AYOR
-* modules are invoked every 1 minute by crond or Task Scheduler
+The main source code and resources are organized as follows:
 
-[EOF]
+- `diy-panel/`: Bitmap display sample
+- `optional/bitmap_src`: Bitmap data for diy-panel
+- `optional/diy-lcd`: LED control sample
+- `optional/diy-pico`: Raspberry Pi Pico module for connecting diy-panel
+
+Status information collector scripts included in the release package:
+
+- `diy-pstat`: Script to check process status
+- `diy-dstat`: Script to check performance values
+
+## Installation
+
+Extract the release module and run the install script.
+
+- Modules are placed in `/opt/AYOR/` or `C:\Program Files (x86)\AYOR`
+- Modules are invoked every 1 minute by cron (on Linux) or Task Scheduler (on Windows)
+- `diy-panel/diy-ctl`: Script to start and stop modules
+- `diy-panel/custom`: Script for changing color, rotation, etc.
+- `diy-panel/pstat/`: Script for process status monitoring
+- `diy-panel/dstat/`: Script for performance monitoring
