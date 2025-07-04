@@ -37,7 +37,7 @@ Status information collector scripts included in the release package:
 
 ## Installation
 
-Extract the release module and run the install script.
+Extract the [release module](/releases/latest) and run the install script.
 
 - Modules are placed in `/opt/AYOR/` or `C:\Program Files (x86)\AYOR`
 - Modules are invoked every 1 minute by cron (on Linux) or Task Scheduler (on Windows)
