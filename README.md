@@ -41,7 +41,7 @@ Extract the [release module](https://github.com/k-kato-dc/diy-panel/releases) an
 
 - Modules are placed in `/opt/AYOR/` or `C:\Program Files (x86)\AYOR`
 - Modules are invoked every 1 minute by cron (on Linux) or Task Scheduler (on Windows)
-- `diy-panel/diy-ctl`: Script to start and stop modules
+- `diy-panel/diyctl`: Script to start and stop modules
 - `diy-panel/custom`: Script for changing color, rotation, etc.
 - `diy-panel/pstat/`: Script for process status monitoring
 - `diy-panel/dstat/`: Script for performance monitoring
